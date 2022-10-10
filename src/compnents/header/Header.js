@@ -6,7 +6,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     return (
         <div className="bg-red-300 w-full flex  justify-between p-3">
-            <div className='bg-red-300 w-full'>
+            <div>
                 <div onClick={() => setOpen(!open)} className="h-8 w-8 text-black font-bolder md:hidden">
                     {
                         open ? <XMarkIcon /> : <Bars3Icon />
@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
             </div>
             <div>
-                <h1 className='text-2xl font-bold'>Quizzes</h1>
+                <h1 className='text-3xl font-bold'>Quizzes</h1>
             </div>
         </div>
     );
