@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,8 +15,9 @@ const Option = ({ option, correctAnswer }) => {
 
     return (
         <div className='mt-5 mb-5'>
-            <button onClick={toastOnClick} className='text-lg font-medium'> <input type="checkbox" name="" id="" /> {option}</button>
+            <button onClick={toastOnClick} className='bg-violet-300 hover:bg-violet-400 text-lg font-medium p-3 mx-3 rounded'> <input type="checkbox" name="" id="" /> {option}</button>
             <ToastContainer />
+
         </div>
     );
 };

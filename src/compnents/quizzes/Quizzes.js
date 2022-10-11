@@ -9,7 +9,7 @@ const Quizzes = () => {
     const { questions, total } = quizzes.data
     return (
         <div className='text-center'>
-            <h1 className='text-2xl font-bold mt-5'>Total questions:{total}</h1>
+            <h1 className='text-2xl font-bold mt-5'>Total Questions: {total}</h1>
             <div className='mt-5'>
                 {
                     questions.map(quiz => <Questions quiz={quiz} key={quiz.id}></Questions>)
