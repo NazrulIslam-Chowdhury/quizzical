@@ -6,12 +6,15 @@ import Questions from '../questions/Questions';
 
 const Quizzes = () => {
     const quizzes = useLoaderData();
-    const questions = quizzes.data.questions
+    const { questions, total } = quizzes.data
     return (
-        <div>
-            {
-                questions.map(question => <Questions question={question} key={question.id}></Questions>)
-            }
+        <div className='text-center'>
+            <h1 className='text-2xl font-bold mt-5'>Total questions:{total}</h1>
+            <div className='mt-5'>
+                {
+                    questions.map(quiz => <Questions quiz={quiz} key={quiz.id}></Questions>)
+                }
+            </div>
         </div>
     );
 };
