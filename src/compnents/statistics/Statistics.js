@@ -6,7 +6,7 @@ const Statistics = () => {
     const charts = useLoaderData();
     return (
         <div className='w-full h-full mt-8'>
-            <h1 className='text-center font-medium mb-5'>name x total question chart</h1>
+            <h1 className='ml-40 font-medium mb-5'>name x total question chart</h1>
             <LineChart
                 width={500}
                 height={300}
