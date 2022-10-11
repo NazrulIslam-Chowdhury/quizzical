@@ -6,6 +6,8 @@ import Home from './compnents/home/Home';
 import YourTopics from './compnents/topics/YourTopics';
 import Statistics from './compnents/statistics/Statistics';
 import Blog from './compnents/blog/Blog';
+import Quizzes from './compnents/quizzes/Quizzes';
+
 
 
 function App() {
@@ -22,6 +24,11 @@ function App() {
           path: '/topics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <YourTopics></YourTopics>
+        },
+        {
+          path: '/topic/:topicId',
+          loader: async ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`),
+          element: <Quizzes></Quizzes>
         },
         {
           path: '/statistics',
