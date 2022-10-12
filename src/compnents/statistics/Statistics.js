@@ -22,7 +22,6 @@ const Statistics = () => {
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
-
         </div>
     );
 };

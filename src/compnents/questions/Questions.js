@@ -10,7 +10,7 @@ const Questions = ({ quiz }) => {
     return (
         <div className='bg-gradient-to-r from-red-300 to-violet-300 mt-5 ml-3 mr-3 rounded relative'>
 
-            <h1 className='text-xl font-medium mt-5'><span className='font-bold'>Question:</span> {question}</h1>
+            <h1 className='text-xl font-medium mt-5'><span className='font-bold'>Question:</span> {question.slice(3, -4)}</h1>
 
             <div className='grid grid-cols-2 gap-5'>
                 {
