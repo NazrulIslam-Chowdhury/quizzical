@@ -10,6 +10,7 @@ import Quizzes from './compnents/quizzes/Quizzes';
 
 
 
+
 function App() {
   const router = createBrowserRouter([
     {
